@@ -30,8 +30,6 @@ while i < 127 :
     NoteType.append("NOTE_B" + str(octave))
     octave += 1
     i += 12
-#print(NoteType)
-#print(NoteType[127])
 
 # Initialize a list to store notes
 notes = []
@@ -44,7 +42,5 @@ for track in megaTrack.tracks:
             if msg.velocity !=0 :
                 notes.append(NoteType[int(msg.note)])
 
-
-# Display the notes
 for note in notes:
     print(note)
